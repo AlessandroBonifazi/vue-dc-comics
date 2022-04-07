@@ -2,7 +2,7 @@
 <template>
   <footer>
     <!-- link -->
-    <section class="bg-primary h-80">
+    <section class="bg-primary h-100">
       <div class="container">
         <div class="card-container">
           <div class="card">

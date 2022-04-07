@@ -2,7 +2,7 @@
   <div class="body">
     <div id="app">
       <Header />
-      <Main :comics="series" />
+      <Main :comics="comics" />
       <Footer />
     </div>
   </div>
@@ -13,19 +13,19 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 // data
-import series from "@/assets/dc-comics";
+import comics from "@/assets/dc-comics";
 
 export default {
   name: "App",
+  data() {
+    return {
+      comics,
+    };
+  },
   components: {
     Header,
     Main,
     Footer,
-  },
-  data() {
-    return {
-      series,
-    };
   },
 };
 </script>
@@ -40,7 +40,6 @@ export default {
 }
 .body {
   background-color: black;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   #app {

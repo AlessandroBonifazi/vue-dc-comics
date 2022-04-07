@@ -24,11 +24,11 @@ export default {
   width: calc(100% / 6);
   color: white;
   padding: 1rem;
-  h2 {
-    font-size: 1.1rem;
+  h3 {
+    font-size: 15px;
   }
   img {
-    width: 100%;
+    height: 120px;
   }
 }
 </style>
